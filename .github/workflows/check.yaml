@@ -22,3 +22,16 @@ jobs:
       - name: run
         run: |
           make yamllint
+
+  kustomizebuild:
+    name: kustomizebuild
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+    container:
+      image: k8s.gcr.io/kustomize/kustomize:v4.5.5
+    steps:
+      - uses: actions/checkout@v3
+      - name: run
+        run: |
+          make kustomizebuild
