@@ -20,4 +20,5 @@ jobs:
         run: |
           sudo apt-get install yamllint
       - name: run
+        run: |
           make yamllint
