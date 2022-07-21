@@ -1,0 +1,41 @@
+---
+name: check
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  yamllint:
+    name: yamllint
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+    steps:
+      - uses: actions/checkout@v3
+      - name: setup
+        run: |
+          sudo apt-get install yamllint
+      - name: run
+        run: |
+          make yamllint
+
+  kustomizebuild:
+    name: kustomizebuild
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+    steps:
+      - uses: actions/checkout@v3
+      - name: setup
+        env:
+          KUSTOMIZE_VERSION: "4.5.5"
+        run: |
+          curl -s "https://raw.githubusercontent.com/kubernetes-sigs/kustomize/master/hack/install_kustomize.sh" | bash -s $KUSTOMIZE_VERSION
+          kustomize version
+      - name: run
+        run: |
+          make kustomizebuild
