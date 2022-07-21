@@ -34,8 +34,7 @@ jobs:
         env:
           KUSTOMIZE_VERSION: "4.2.0"
         run: |
-          curl -Os "https://raw.githubusercontent.com/kubernetes-sigs/kustomize/master/hack/install_kustomize.sh"
-          ./install_kustomize.sh
+          curl -s "https://raw.githubusercontent.com/kubernetes-sigs/kustomize/master/hack/install_kustomize.sh" | bash
           kustomize version
       - name: run
         run: |
