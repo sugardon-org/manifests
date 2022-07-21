@@ -1,0 +1,22 @@
+name: check
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  yamllint:
+    name: yamllint
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+    steps:
+      - uses: actions/checkout@v3
+      - name: setup
+        run: |
+          sudo apt-get install yamllint
+      - name: run
+          make yamllint
