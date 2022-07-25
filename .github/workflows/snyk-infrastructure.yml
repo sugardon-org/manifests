@@ -43,7 +43,7 @@ jobs:
         with:
           # https://github.com/snyk/actions/blob/master/iac/README.md
           sarif: true
-          file: argocd-apps/base/app-sugardonblog.yaml
+          file: .
       - name: Upload result to GitHub Code Scanning
         uses: github/codeql-action/upload-sarif@v2
         with:
