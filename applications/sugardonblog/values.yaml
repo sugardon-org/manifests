@@ -1,0 +1,5 @@
+---
+sugardonblog:
+  image:
+    repository: sugardon/sugardonblog
+    tag: ba106ca758d2bc3a0fd52a43cf722e159c949a80
