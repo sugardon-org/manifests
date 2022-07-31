@@ -4,7 +4,7 @@ kind: Application
 metadata:
   name: sugardonblog
 spec:
-  project: default
+  project: manifests
   source:
     directory:
       recurse: false
