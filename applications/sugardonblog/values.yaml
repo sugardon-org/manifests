@@ -2,4 +2,4 @@
 sugardonblog:
   image:
     repository: sugardon/sugardonblog
-    tag: ba106ca758d2bc3a0fd52a43cf722e159c949a80
+    tag: sha256-3072dfbc8b0448ccccd28103f608f85ea08437697a6968d90d709b249d38416d.sig
