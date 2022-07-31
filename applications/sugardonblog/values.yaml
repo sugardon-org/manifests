@@ -1,5 +1,5 @@
 ---
-sugardonblog:
+nextjs:
   image:
     repository: sugardon/sugardonblog
     tag: cc24f9443aa112c1fb6d5b344fee558075ef79a4
