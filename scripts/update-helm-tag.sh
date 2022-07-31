@@ -31,7 +31,7 @@ gh repo clone "$ORG/$REPO"
 cd $REPO
 
 # update tag
-yq -i '.sugardonblog.image.tag="'$REV'"' $(pwd)/$VALUES_FILE
+yq -i '.nextjs.image.tag="'$REV'"' $(pwd)/$VALUES_FILE
 
 # branch
 git switch -c $BRANCH
