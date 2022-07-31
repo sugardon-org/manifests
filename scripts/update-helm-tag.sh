@@ -53,4 +53,4 @@ gh pr create \
     --base="main" \
     --title="Update tag $REV" \
     --body="Update tag $REV" \
-    --label="automerge,kind/test"
+    --label="automerge"
