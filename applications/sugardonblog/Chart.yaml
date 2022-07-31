@@ -3,6 +3,6 @@ apiVersion: v2
 name: sugardonblog
 version: 6.2.1
 dependencies:
-  - name: sugardonblog
+  - name: nextjs
     version: 0.0.1
     repository: https://helm.sugardon.com
