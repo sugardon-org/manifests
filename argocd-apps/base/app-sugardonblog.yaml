@@ -4,13 +4,16 @@ kind: Application
 metadata:
   name: sugardonblog
 spec:
-  project: default
+  project: manifests
   source:
     directory:
       recurse: false
     path: applications/sugardonblog
     repoURL: https://github.com/sugardon-org/manifests
     targetRevision: main
+    helm:
+      valueFiles:
+        - values.yaml
   destination:
     namespace: sugardonblog
     server: https://kubernetes.default.svc
