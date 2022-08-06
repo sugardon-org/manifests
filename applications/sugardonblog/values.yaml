@@ -2,4 +2,4 @@
 nextjs:
   image:
     repository: sugardon/sugardonblog
-    tag: 8d03e276cc44472afa1b8c69a7e30a29154cf98f
+    tag: 37e8670e5a4073bbc74972bafb617c3b1312434e
