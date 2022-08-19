@@ -10,3 +10,7 @@ nextjs:
     issuer:
       kind: ClusterIssuer
       name: letsencrypt-prod
+  emissaryIngress:
+    enabled: true
+    domain: "blog.sugardon.com"
+    tlsSecretName: sugardonblog-tls
