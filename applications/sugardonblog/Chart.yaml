@@ -4,5 +4,5 @@ name: sugardonblog
 version: 6.2.1
 dependencies:
   - name: nextjs
-    version: 0.0.2
+    version: 0.0.3
     repository: https://helm.sugardon.com
