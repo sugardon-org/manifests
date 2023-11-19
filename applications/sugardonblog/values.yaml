@@ -2,7 +2,7 @@
 nextjs:
   image:
     repository: sugardon/sugardonblog
-    tag: d17f34a2f8798672aab947d2222718ce9b2d6bcd
+    tag: 7b4bee00c6102f2e7bd663fa0a4ab41147bde81a
   certificate:
     enabled: true
     domain: "blog.sugardon.com"
